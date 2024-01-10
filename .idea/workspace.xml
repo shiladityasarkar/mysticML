@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa145e3e-e70a-494a-ba4e-27f5ab0ea93e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/Preprocess.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.3.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML/Preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/Preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Daddy.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Daddy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/DimReduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/DimReduction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Duplicate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Encoding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/FeatureSelection.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Imputation.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Imputation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Outlier.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Outlier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Sampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Sampling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Transformation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
