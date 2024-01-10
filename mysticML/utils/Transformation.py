@@ -1,7 +1,7 @@
 import pandas
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from scipy.stats import shapiro
-from utils import Daddy
+from mysticML.utils import Daddy
 
 class Transformation(Daddy):
     def __init__(self, x: pandas.DataFrame,target:str=None,**kwargs) ->None:

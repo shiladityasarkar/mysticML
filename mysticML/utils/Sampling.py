@@ -1,4 +1,4 @@
-from utils import Daddy
+from mysticML.utils import Daddy
 import pandas
 import numpy as np
 from sklearn.utils import resample

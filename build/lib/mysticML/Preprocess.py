@@ -1,12 +1,3 @@
-from utils.Duplicate import *
-from utils.DimReduction import *
-from utils.Encoding import *
-from utils.FeatureSelection import *
-from utils.Imputation import *
-from utils.Outlier import *
-from utils.Sampling import *
-from utils.Transformation import *
-
 import pandas
 class Preprocess(object):
     def __init__(self, df:pandas.DataFrame) ->None:

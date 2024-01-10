@@ -1,4 +1,4 @@
-from utils import Daddy
+from mysticML.utils import Daddy
 import pandas
 
 class Duplicate(Daddy):

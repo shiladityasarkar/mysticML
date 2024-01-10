@@ -1,6 +1,6 @@
 import pandas
 from scipy.stats import zscore
-from utils import Daddy
+from mysticML.utils import Daddy
 
 
 class Outlier(Daddy):

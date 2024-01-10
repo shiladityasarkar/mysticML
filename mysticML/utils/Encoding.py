@@ -1,5 +1,5 @@
 import pandas
-from utils import Daddy
+from mysticML.utils import Daddy
 
 class Encoding(Daddy):
     def init(self, x: pandas.DataFrame, target:str=None,**kwargs) -> None:
