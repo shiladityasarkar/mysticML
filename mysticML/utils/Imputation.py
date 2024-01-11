@@ -45,7 +45,7 @@ class Imputation(Daddy):
         t.dropna(inplace=True)
 
         with warnings.catch_warnings():
-          warnings.simple_filter("ignore")
+          warnings.simplefilter("ignore")
           stat, p_value_s = shapiro(t)
 
         kstest_result = kstest(t, norm.cdf)

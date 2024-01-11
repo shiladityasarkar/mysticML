@@ -23,7 +23,7 @@ class Transformation(Daddy):
             n = self.x.shape[0]
 
             with warnings.catch_warnings():
-                warnings.simple_filter("ignore")
+                warnings.simplefilter("ignore")
                 stat, p_value_s = shapiro(self.x[col])
 
             kstest_result = kstest(self.x[col], norm.cdf)
