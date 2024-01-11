@@ -1,3 +1,3 @@
 from setuptools import setup
 setup(name='mysticML',
-      version='0.40')
+      version='0.5')

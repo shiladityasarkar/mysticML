@@ -1,5 +1,6 @@
 from mysticML.utils import Daddy
 import pandas
+pandas.options.mode.chained_assignment=None
 
 class Duplicate(Daddy):
     """

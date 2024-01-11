@@ -1,6 +1,8 @@
 import pandas
 from scipy.stats import shapiro
+from scipy.stats import kstest, norm
 from mysticML.utils import Daddy
+import warnings
 
 class Imputation(Daddy):
   def __init__(self, x: pandas.DataFrame, target:str=None,**kwargs) -> None:
@@ -23,6 +25,7 @@ class Imputation(Daddy):
       return self.x
     self.report_.append("Imputation")
     flag=0
+    n = self.x.shape[0]
     null_per = self.x.isnull().mean()
     col_drop = null_per[null_per > 0.6].index
     assert self.target not in col_drop, f"{self.target} is filled mostly with null values ; cannot be a target column."
@@ -40,9 +43,21 @@ class Imputation(Daddy):
       if self.x[col].dtype in [float, int]:
         t = self.x[col]
         t.dropna(inplace=True)
-        stat, p_value = shapiro(t)
-        if p_value > 0.05 and flag==0:
-          self.x[col].fillna(self.x[col].mean(),inplace=True)
+
+        with warnings.catch_warnings():
+          warnings.simple_filter("ignore")
+          stat, p_value_s = shapiro(t)
+
+        kstest_result = kstest(t, norm.cdf)
+        ks_statistic, p_value_k = kstest_result
+        if n > 5000:
+          if p_value_k > 0.05 and flag == 0:
+            self.x[col].fillna(self.x[col].mean(), inplace=True)
+          else:
+            self.x[col].fillna(self.x[col].median(), inplace=True)
         else:
-          self.x[col].fillna(self.x[col].median(),inplace=True)
+          if p_value_s > 0.05 and flag == 0:
+            self.x[col].fillna(self.x[col].mean(), inplace=True)
+          else:
+            self.x[col].fillna(self.x[col].median(), inplace=True)
     return self.x

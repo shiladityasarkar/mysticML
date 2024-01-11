@@ -2,6 +2,7 @@ from mysticML.utils import Daddy
 import pandas
 from sklearn.decomposition import PCA
 from math import ceil
+pandas.options.mode.chained_assignment=None
 
 class DimReduction(Daddy):
 
@@ -13,7 +14,7 @@ class DimReduction(Daddy):
         if not self.dim_red:
             return False
         s = self.x.shape[1]
-        if s > 2:
+        if s > 5:
             self.pca = PCA(n_components=ceil(s/2))
             return True
         return False

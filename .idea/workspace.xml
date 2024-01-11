@@ -3,7 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="fa145e3e-e70a-494a-ba4e-27f5ab0ea93e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML/Preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/Preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/Preprocess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Daddy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/DimReduction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Duplicate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Encoding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/FeatureSelection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Imputation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Outlier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Sampling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Transformation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.40-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.40.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/DimReduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/DimReduction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Duplicate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/Imputation.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Imputation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/Transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Transformation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +43,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -33,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysticMLearn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RecentsManager">
