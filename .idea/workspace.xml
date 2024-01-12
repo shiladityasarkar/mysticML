@@ -15,14 +15,13 @@
       <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Sampling.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Transformation.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.5-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.5.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.5.1-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.5.1.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML.egg-info/PKG-INFO" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML.egg-info/SOURCES.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML.egg-info/dependency_links.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML/utils/Imputation.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Imputation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML/utils/Transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Transformation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/Preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/Preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

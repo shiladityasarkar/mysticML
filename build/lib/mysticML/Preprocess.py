@@ -3,10 +3,9 @@ from mysticML.utils import Duplicate, Outlier, \
     Imputation, Transformation, Encoding, \
     FeatureSelection, DimReduction, Sampling
 
-
 class Preprocess(object):
     def __init__(self, df:pandas.DataFrame) ->None:
-        self.report_ = None
+        self.report_ = []
         self.df = df
 
     def fit(self, target:str=None, combo:str='advanced',
