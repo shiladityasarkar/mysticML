@@ -7,7 +7,7 @@ class Daddy:
     def __init__(self, x:pandas.DataFrame, target:str=None, combo:str='advanced',
                  duplicate: bool = None, outlier: bool = None, impute: bool = None,
                  transform: bool = None, encode: bool = None,
-                 feature_sel: bool = None, dim_red: bool = None, sampling: bool = None) ->None:
+                 feature_sel: bool = None, feature_ext: bool = None, sampling: bool = None) ->None:
 
         if target is not None:
             self.x = x.drop([target],axis=1)
@@ -42,8 +42,8 @@ class Daddy:
             self.feature_sel = False
         else:
             self.feature_sel = True
-        if dim_red is False:
-            self.dim_red = False
+        if feature_ext is False:
+            self.feature_ext = False
         else:
             self.dim_red = True
         if sampling is False:
@@ -60,16 +60,16 @@ class Daddy:
         if combo == 'intermediate':
             if not feature_sel:
                 self.feature_sel = False
-            if not dim_red:
-                self.dim_red = False
+            if not feature_ext:
+                self.feature_ext = False
             if not sampling:
                 self.sampling = False
 
         elif combo == 'basic':
             if not feature_sel:
                 self.feature_sel = False
-            if not dim_red:
-                self.dim_red = False
+            if not feature_ext:
+                self.feature_ext = False
             if not sampling:
                 self.sampling = False
             if not encode:
@@ -79,14 +79,14 @@ class Daddy:
 
         if encode is False:
             assert feature_sel is False or feature_sel is None, "feature_sel cannot be set to True when encode is set to False."
-            assert dim_red is False or dim_red is None, "dim_red cannot be set to True when encode is set to False."
+            assert feature_ext is False or feature_ext is None, "feature_ext cannot be set to True when encode is set to False."
             self.feature_sel = False
-            self.dim_red = False
+            self.feature_ext = False
 
         if impute is False:
             assert sampling is False or sampling is None, "sampling cannot be set to True when imputation is set to False."
             assert feature_sel is False or feature_sel is None, "feature_sel cannot be set to True when imputation is set to False."
-            assert dim_red is False or dim_red is None, "dim_red cannot be set to True when imputation is set to False."
+            assert feature_ext is False or feature_ext is None, "feature_ext cannot be set to True when imputation is set to False."
             self.sampling = False
             self.feature_sel = False
             self.dim_red = False

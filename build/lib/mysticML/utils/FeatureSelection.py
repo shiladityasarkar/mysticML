@@ -2,7 +2,7 @@ from mysticML.utils import Daddy
 import pandas
 import numpy as np
 from sklearn.feature_selection import VarianceThreshold
-from sklearn.feature_selection import SelectKBest, f_classif
+from sklearn.feature_selection import SelectKBest, f_classif, f_regression
 pandas.options.mode.chained_assignment=None
 
 class FeatureSelection(Daddy):
@@ -20,11 +20,13 @@ class FeatureSelection(Daddy):
                        if column not in self.x.columns[var.get_support()]]
             self.x.drop(low_col, axis=1, inplace=True)
         except ValueError:
-            print('Note: Variances of all the feature columns are lower than 0.25.\
-                 \nThis dataset is not recommended for training any machine learning model.')
+            print('Warning: Variances of all the feature columns are lower than 0.25.')
         s = self.x.shape[1]
-        if s > 5:
-            self.app = SelectKBest(score_func=f_classif, k=int(s/2))
+        if s > 6:
+            if self.y.nunique() > 0.02*self.x.shape[0] and self.y.dtype != 'object':
+                self.app = SelectKBest(score_func=f_regression, k=int(s/2))
+            else:
+                self.app = SelectKBest(score_func=f_classif, k=int(s/2))
             return True
         else:
             return False

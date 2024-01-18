@@ -1,7 +1,8 @@
 import pandas
+import numpy as np
 from mysticML.utils import Duplicate, Outlier, \
     Imputation, Transformation, Encoding, \
-    FeatureSelection, DimReduction, Sampling
+    FeatureSelection, FeatureExtraction, Sampling
 
 class Preprocess(object):
     def __init__(self, df:pandas.DataFrame) ->None:
@@ -14,16 +15,15 @@ class Preprocess(object):
             feature_sel:bool=None, dim_red:bool=None, sampling:bool=None) ->pandas.DataFrame:
 
         df = self.df
-
+        Duplicate.report_.clear()
         operations = [Duplicate, Outlier, Imputation,
-        Transformation, Encoding, FeatureSelection, DimReduction, Sampling]
+        Transformation, Encoding, FeatureSelection, FeatureExtraction, Sampling]
 
         for operation in operations:
             op = operation(df,target=target,combo=combo,duplicate=duplicate,
                            outlier=outlier,impute=impute,transform=transform,encode=encode,
-                           feature_sel=feature_sel,dim_red=dim_red,sampling=sampling)
+                           feature_sel=feature_sel,feature_ext=dim_red,sampling=sampling)
             df = op.apply()
             self.report_ = op.report_
 
         return df
-

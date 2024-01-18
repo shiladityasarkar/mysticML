@@ -29,4 +29,4 @@ jobs:
           python -m twine upload --skip-existing dist/*
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: pypi-AgEIcHlwaS5vcmcCJDZhZDBmYTA1LWJmMWUtNGQ2ZS04NGEyLTFmNGRmYmIyYmM4YQACKlszLCI5ZGQ3MWU2Ni04OWQ3LTQ3MDMtYjY1OS01YjQ0ZGU2YzNiMzgiXQAABiAJn0Mdm18QH-25wgvz9QR3ituCgSzb_GuTv_-eqPfmxA
+          TWINE_PASSWORD: ${{ secrets.shiladitya }}

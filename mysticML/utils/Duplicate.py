@@ -8,6 +8,7 @@ class Duplicate(Daddy):
     """
     def __init__(self, x:pandas.DataFrame, target:str=None, **kwargs) ->None:
         super().__init__(x, target, **kwargs)
+        self.x = pandas.concat([self.x,self.y],axis=1)
 
     def check(self) ->bool:
         if not self.duplicate:
@@ -16,7 +17,9 @@ class Duplicate(Daddy):
 
     def apply(self) ->pandas.DataFrame:
         if not self.check():
-            return pandas.concat([self.x,self.y],axis=1)
-        self.report_.append("Duplicate")
+            return self.x
+        in_size = len(self.x)
         self.x.drop_duplicates(inplace=True)
-        return pandas.concat([self.x,self.y],axis=1)
+        if len(self.x) != in_size:
+            self.report_.append("Duplicate")
+        return self.x

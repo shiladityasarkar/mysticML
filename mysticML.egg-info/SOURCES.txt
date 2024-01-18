@@ -7,9 +7,9 @@ mysticML.egg-info/SOURCES.txt
 mysticML.egg-info/dependency_links.txt
 mysticML.egg-info/top_level.txt
 mysticML/utils/Daddy.py
-mysticML/utils/DimReduction.py
 mysticML/utils/Duplicate.py
 mysticML/utils/Encoding.py
+mysticML/utils/FeatureExtraction.py
 mysticML/utils/FeatureSelection.py
 mysticML/utils/Imputation.py
 mysticML/utils/Outlier.py

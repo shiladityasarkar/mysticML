@@ -1,6 +1,6 @@
 from mysticML.utils.Daddy import *
 from mysticML.utils.Duplicate import *
-from mysticML.utils.DimReduction import *
+from mysticML.utils.FeatureExtraction import *
 from mysticML.utils.Encoding import *
 from mysticML.utils.FeatureSelection import *
 from mysticML.utils.Imputation import *

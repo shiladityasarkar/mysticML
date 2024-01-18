@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa145e3e-e70a-494a-ba4e-27f5ab0ea93e" name="Changes" comment="">
+    <list default="true" id="1bd776de-369a-4cae-8812-6baec9c4d6f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/workflow.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/Preprocess.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Daddy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/DimReduction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Duplicate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Encoding.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/FeatureSelection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Imputation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Outlier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Sampling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/Transformation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.5.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mysticML-0.5.1.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/mysticML/utils/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML/Preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/Preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/Daddy.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Daddy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/DimReduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/FeatureExtraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Duplicate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,47 +20,55 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2am8a6G4gG0sBxFItAcFhHma20S" />
+  <component name="ProjectId" id="2arvBrxz0OcOWSUgS53c2EKET5U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysticML/Preprocess.py" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\StrangerCodes\Libraries\mysticML\mysticML" />
-    </key>
+  <component name="RunManager">
+    <configuration name="Preprocess" type="PythonConfigurationType" factoryName="Python">
+      <module name="mysticML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\SHILADITYA CHATTORAJ\AppData\Local\Programs\Python\Python311\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysticML" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysticML/Preprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fa145e3e-e70a-494a-ba4e-27f5ab0ea93e" name="Changes" comment="" />
-      <created>1704912456270</created>
+      <changelist id="1bd776de-369a-4cae-8812-6baec9c4d6f6" name="Changes" comment="" />
+      <created>1705089382735</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1704912456270</updated>
+      <updated>1705089382735</updated>
     </task>
     <servers />
   </component>
@@ -83,11 +82,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/mysticML" />
-    </ignored-roots>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

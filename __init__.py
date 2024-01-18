@@ -31,4 +31,5 @@ def _auto_install_dependencies():
         print("math is not installed. Installing...")
         subprocess.call(['pip', 'install', 'math'])
 
+
 _auto_install_dependencies()
