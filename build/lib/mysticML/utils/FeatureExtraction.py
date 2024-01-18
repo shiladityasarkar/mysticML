@@ -12,11 +12,10 @@ class FeatureExtraction(Daddy):
         self.s = None
 
     def check(self) ->bool:
-        if not self.dim_red:
+        if not self.feature_ext:
             return False
         self.s = self.x.shape[1]
         if self.x.shape[0] < self.s:
-            print("Warning: number of samples is less than the number of features.")
             self.s = self.x.shape[0]
             self.pca = PCA(n_components=ceil(self.s/2))
             return True

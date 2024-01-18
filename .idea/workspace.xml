@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bd776de-369a-4cae-8812-6baec9c4d6f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/workflow.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/mysticML/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/mysticML/utils/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML/Preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/Preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML/utils/Daddy.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Daddy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML/utils/DimReduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/FeatureExtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML/utils/Duplicate.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Duplicate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/FeatureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/FeatureExtraction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/FeatureSelection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysticML/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysticML/utils/Sampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysticML/utils/Sampling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

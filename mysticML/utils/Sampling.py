@@ -14,6 +14,8 @@ class Sampling(Daddy):
     def check(self) ->bool:
         if not self.sampling:
             return False
+        if self.y.nunique() > 0.0275 * self.x.shape[0] or self.y.dtype != 'object':
+            return False
         for c,d in zip(self.y.value_counts().index.to_list(),self.y.value_counts()):
             self.val[c]=d
         mean = np.round(np.mean(list(self.val.values())))

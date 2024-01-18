@@ -45,7 +45,7 @@ class Daddy:
         if feature_ext is False:
             self.feature_ext = False
         else:
-            self.dim_red = True
+            self.feature_ext = True
         if sampling is False:
             self.sampling = False
         else:
