@@ -2,7 +2,6 @@ import pandas
 from scipy.stats import zscore
 from mysticML.utils import Daddy
 
-
 class Outlier(Daddy):
     def __init__(self, x: pandas.DataFrame, target:str=None, **kwargs) -> None:
         super().__init__(x, target, **kwargs)

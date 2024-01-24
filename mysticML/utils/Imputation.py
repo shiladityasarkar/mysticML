@@ -60,4 +60,5 @@ class Imputation(Daddy):
             self.x[col].fillna(self.x[col].mean(), inplace=True)
           else:
             self.x[col].fillna(self.x[col].median(), inplace=True)
+    self.x = self.x.reset_index(drop=True)
     return self.x
