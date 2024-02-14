@@ -4,6 +4,7 @@
 
 # Authors
 ### Shiladitya Sarkar \ Swastik Banerjee \ Abhinav Bammidi
+![christ](https://github.com/shiladityasarkar/mysticML/assets/155450322/38f31cbf-f608-48a0-835d-a7abbce2f309)
 
 ## Overview
 
