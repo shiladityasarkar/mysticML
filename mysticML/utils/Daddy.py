@@ -1,21 +1,32 @@
 import pandas
 
+
 class Daddy:
 
     report_ = []
 
-    def __init__(self, x:pandas.DataFrame, target:str=None, combo:str='advanced',
-                 duplicate: bool = None, outlier: bool = None, impute: bool = None,
-                 transform: bool = None, encode: bool = None,
-                 feature_sel: bool = None, feature_ext: bool = None, sampling: bool = None) ->None:
+    def __init__(
+        self,
+        x: pandas.DataFrame,
+        target: str = None,
+        combo: str = "advanced",
+        duplicate: bool = None,
+        outlier: bool = None,
+        impute: bool = None,
+        transform: bool = None,
+        encode: bool = None,
+        feature_sel: bool = None,
+        feature_ext: bool = None,
+        sampling: bool = None,
+    ) -> None:
 
         if target is not None:
-            self.x = x.drop([target],axis=1)
+            self.x = x.drop([target], axis=1)
             self.y = x[target]
             self.target = target
         else:
-            self.x = x.iloc[:,:-1]
-            self.y = x.iloc[:,-1]
+            self.x = x.iloc[:, :-1]
+            self.y = x.iloc[:, -1]
             self.target = x.columns[-1]
 
         if duplicate is False:
@@ -51,13 +62,15 @@ class Daddy:
         else:
             self.sampling = True
 
-        assert combo in ['basic', 'intermediate', 'advanced'], f"unknown value {combo} passed " \
-                                                               f"for parameter combo." \
-                                                               f"\n allowed values: " \
-                                                               f"['basic', 'intermediate', 'advanced']"
+        assert combo in ["basic", "intermediate", "advanced"], (
+            f"unknown value {combo} passed "
+            f"for parameter combo."
+            f"\n allowed values: "
+            f"['basic', 'intermediate', 'advanced']"
+        )
         self.combo = combo
 
-        if combo == 'intermediate':
+        if combo == "intermediate":
             if not feature_sel:
                 self.feature_sel = False
             if not feature_ext:
@@ -65,7 +78,7 @@ class Daddy:
             if not sampling:
                 self.sampling = False
 
-        elif combo == 'basic':
+        elif combo == "basic":
             if not feature_sel:
                 self.feature_sel = False
             if not feature_ext:
@@ -78,21 +91,31 @@ class Daddy:
                 self.transform = False
 
         if encode is False:
-            assert feature_sel is False or feature_sel is None, "feature_sel cannot be set to True when encode is set to False."
-            assert feature_ext is False or feature_ext is None, "feature_ext cannot be set to True when encode is set to False."
+            assert (
+                feature_sel is False or feature_sel is None
+            ), "feature_sel cannot be set to True when encode is set to False."
+            assert (
+                feature_ext is False or feature_ext is None
+            ), "feature_ext cannot be set to True when encode is set to False."
             self.feature_sel = False
             self.feature_ext = False
 
         if impute is False:
-            assert sampling is False or sampling is None, "sampling cannot be set to True when imputation is set to False."
-            assert feature_sel is False or feature_sel is None, "feature_sel cannot be set to True when imputation is set to False."
-            assert feature_ext is False or feature_ext is None, "feature_ext cannot be set to True when imputation is set to False."
+            assert (
+                sampling is False or sampling is None
+            ), "sampling cannot be set to True when imputation is set to False."
+            assert (
+                feature_sel is False or feature_sel is None
+            ), "feature_sel cannot be set to True when imputation is set to False."
+            assert (
+                feature_ext is False or feature_ext is None
+            ), "feature_ext cannot be set to True when imputation is set to False."
             self.sampling = False
             self.feature_sel = False
             self.dim_red = False
 
-
-    def check(self) ->bool:
+    def check(self) -> bool:
         raise NotImplementedError
-    def apply(self) ->pandas.DataFrame:
+
+    def apply(self) -> pandas.DataFrame:
         raise NotImplementedError
